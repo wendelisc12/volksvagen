@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Inscricao</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>	
+	
+	body {	
+		display: flex;
+		flex-direction: column;
+	    align-items: center;
+		justify-content: center;
+		width: 100%;
+		height:100vh;
+	}
+	
+		
+</style>
+</head>
+<body>
+	<div class="container">
+<form method="post" action="/salvar_candidato">
+  <fieldset>
+   <h2>Ficha de Inscrição</h2>
+   
+   <div class="form-group">
+   <h4>Categoria</h4>
+    <label for="shape">Shape Design</label>
+    <input type="checkbox" class="form-control" id="shape" name="categoriaEstagio">
+    
+     <label for="color">Color & Trim</label>
+    <input type="checkbox" class="form-control" id="color" name="categoriaEstagio">
+  </div>
+   <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="nome" name="nome" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="endereco">Endereço</label>
+    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="cidade">Cidade/UF</label>
+    <input type="text" class="form-control" id="cidade" name="cidade" placeholder="">
+  </div>
+   <div class="form-group">
+    <label for="cep">CEP</label>
+    <input type="text" class="form-control" id="cep" name="cep" placeholder="">
+  </div>
+   <div class="form-group">
+    <label for="data">Data de nascimento</label>
+    <input type="date" class="form-control" id="data" name="dataNascimento" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="fone">Telefone</label>
+    <input type="text" class="form-control" id="fone" name="telefone" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="celular">Celular</label>
+    <input type="text" class="form-control" id="celular" name="celular" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="">
+  </div>
+    <button type="submit" class="btn btn-primary">Salvar Produto</button>
+  </fieldset>
+</form>
+</div>
+</body>
+</html>
