@@ -153,63 +153,96 @@
 </head>
 <body>
 <div class="container">
-	<form method="post" action="/salvarCandidato">
+	<form method="post" action="/salvarInstituicao">
 	<h2>Ficha de Inscrição</h2>
 	  <fieldset>
 	   
 	   
-	   <legend>Dados pessoais</legend>
-	   
-	   	<div class="form-group">
-		    <label for="nome">Nome</label>
-		    <input type="text" class="form-control" id="nome" name="nome" placeholder="" required>
-	  	</div>
-	  	
-	 <div class="form-group">
-	    <label for="data">Data de nascimento</label>
-	    <input type="date" class="form-control" id="data" name="dataNascimento" placeholder="" required>
-	  </div>
-
-	  <div class="form-group">
-	    <label for="endereco">Endereço</label>
-	    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="" required>
-	  </div>
-	  
-	 <div class="row">
-	    <div class="col">
-	      <div class="form-group">
-		    <label for="uf">Cidade/UF</label>
-		    <input type="text" class="form-control" id="uf" name="uf" placeholder="" required>
+  <fieldset>
+	  <legend>Dados da instituição de ensino</legend>
+	  	 <div class="form-group">
+		    <label for="nomeInstituicao">Nome</label>
+		    <input type="text" class="form-control" id="nomeInstituicao" name="nomeInstituicao" placeholder="" required>
 		  </div>
-	    </div>
-	    <div class="col">
-	      <div class="form-group">
-		    <label for="cep">CEP</label>
-		    <input type="text" class="form-control" id="cep" name="cep" placeholder="" required>
+		  <div class="form-group">
+		    <label for="curso">Curso</label>
+		    <input type="text" class="form-control" id="curso" name="curso" placeholder="">
 		  </div>
+		  
+		  
+		<div class="row">
+		    <div class="col">
+		       <div class="form-group">
+			    <label for="duracao">Duração (em semestres)</label>
+			    <input type="number" class="form-control" id="duracao" name="duracao" min="0" max="10" required>
+			   
+			  </div>
+		    </div>
+		    <div class="col">
+			   <div class="form-group">
+			    <label for="semestreAtual">Semestre Atual</label>
+			    <input type="number" class="form-control" id="semestreAtual" name="semestreAtual" min="0" max="10" required>
+			   
+			  </div>
+		    </div>
+	    
 	    </div>
-  	</div>
-	   
-	  <div class="row">
+	    
+	    <div class="row">
+		    <div class="col">
+		       <div class="form-group">
+			    <label for="numeroMatricula">Número de matrícula</label>
+			    <input type="text" class="form-control" id="numeroMatricula" name="numeroMatricula" placeholder="" required>
+			   
+			  </div>
+		    </div>
+		    
+		    <div class="col">
+			   <div class="form-group">
+			    <label for="cepInstituicao">CEP</label>
+			    <input type="text" class="form-control" id="cepInstituicao" name="cepInstituicao" placeholder="" required>
+			   
+			  </div>
+		    </div>
+		</div>
+			<div class="form-group">
+			    <label for="enderecoInstituicao">Endereço</label>
+			    <input type="text" class="form-control" id="enderecoInstituicao" name="enderecoInstituicao" placeholder="" required>
+			   
+			 </div>
+			 
+			 <div class="form-group">
+			    <label for="ufInstituicao">Cidade/UF</label>
+			    <input type="text" class="form-control" id="ufInstituicao" name="ufInstituicao" placeholder="" required>
+			   
+			 </div>
+			 
+	<div class="row">
 	    <div class="col">
 	      <div class="form-group">
-		    <label for="fone">Telefone</label>
-		    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="">
+		    <label for="telefoneInstituicao">Telefone</label>
+		    <input type="text" class="form-control" id="telefoneInstituicao" name="telefoneInstituicao" placeholder="" required>
 		  </div>
 	    </div>
 	    <div class="col">
 		   <div class="form-group">
-		    <label for="celular">Celular</label>
-		    <input type="text" class="form-control" id="celular" name="celular" placeholder="" required>
+		    <label for="telefone2">Telefone 2</label>
+		    <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="">
 		  </div>
 	    </div>
   	</div>
-
-	  <div class="form-group">
-	    <label for="email">E-mail</label>
-	    <input type="email" class="form-control" id="email" name="email" placeholder="" required>
-	  </div>
-	    
+  			<div class="form-group">
+			    <label for="coordenador">Coordenador</label>
+			    <input type="text" class="form-control" id="coordenador" name="coordenador" placeholder="" required>
+			   
+			 </div>
+			 <div class="form-group">
+			    <label for="emailInstituicao">E-mail</label>
+			    <input type="email" class="form-control" id="emailInstituicao" name="emailInstituicao" placeholder="" required>
+			   
+			 </div>
+  	
+		 
 	  </fieldset>
 	 
 	  <button type="submit" class="btn btn-primary btn-salvar">Cadastrar</button>

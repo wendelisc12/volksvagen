@@ -9,7 +9,7 @@ public class CandidatoService {
 	private CandidatoDAO daoCandidato;
 	
 	public void inserirCandidato(Candidato candidato) {
-		//this.daoCandidato.save(candidato);
+		this.daoCandidato.save(candidato);
 	}
 
 }

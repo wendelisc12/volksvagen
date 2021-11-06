@@ -20,6 +20,10 @@ public class InstituicaoEnsino {
 	private String coordenador;
 	private String emailInstituicao;
 	
+	public InstituicaoEnsino() {
+		
+	}
+	
 	public InstituicaoEnsino(String nomeInstituicao, String curso, int duracao, int semestreAtual, String numeroMatricula,
 			String enderecoInstituicao, String ufInstituicao, String cepInstituicao, String telefoneInstituicao, String telefone2, String coordenador,
 			String emailInstituicao) {

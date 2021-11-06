@@ -8,7 +8,7 @@ public class InstituicaoEnsinoService {
 	@Autowired
 	private InstituicaoEnsinoDAO daoInstituicaoEnsino;
 	
-	public void inserirCandidato(InstituicaoEnsino instituicao) {
-		this.daoInstituicaoEnsino.save(instituicao);
+	public void inserirInstituicao(InstituicaoEnsino instituicaoEnsino) {
+		this.daoInstituicaoEnsino.save(instituicaoEnsino);
 	}
 }

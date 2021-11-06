@@ -1,7 +1,7 @@
 package br.edu.ifpe;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -12,9 +12,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Candidato {
 	
 	@Id
-	private ArrayList<String> categoriaEstagio = new ArrayList<>(); // enum pra ser feito ainda
 	private String nome;
-	private InstituicaoEnsino instituicaoEnsino;
+	//private ArrayList<String> categoriaEstagio = new ArrayList<>(); // enum pra ser feito ainda
+	//private InstituicaoEnsino instituicaoEnsino; mantem o comentario
 	private String endereco;
 	private String uf;
 	private String cep;
@@ -23,12 +23,16 @@ public class Candidato {
 	private String telefone;
 	private String celular;
 	private String email;
+	//ArrayList<String> categoriaEstagio
 	
+	public Candidato() {
+		
+	}
 	
-	public Candidato(ArrayList<String> categoriaEstagio, String nome, String endereco, String uf, String cep,
-			LocalDate dataNascimento, String telefone, String celular, String email, InstituicaoEnsino instituicaoEnsino) {
+	public Candidato(String nome, String endereco, String uf, String cep, LocalDate dataNascimento,
+			 String telefone, String celular, String email) {
 		super();
-		this.categoriaEstagio = categoriaEstagio;
+		//this.categoriaEstagio = categoriaEstagio;
 		this.nome = nome;
 		this.endereco = endereco;
 		this.uf = uf;
@@ -37,14 +41,14 @@ public class Candidato {
 		this.telefone = telefone;
 		this.celular = celular;
 		this.email = email;
-		this.instituicaoEnsino = instituicaoEnsino;
+		//this.instituicaoEnsino = instituicaoEnsino;
 	}
-	public ArrayList<String> getCategoriaEstagio() {
-		return categoriaEstagio;
-	}
-	public void setCategoriaEstagio(ArrayList<String> categoriaEstagio) {
-		this.categoriaEstagio = categoriaEstagio;
-	}
+	//public ArrayList<String> getCategoriaEstagio() {
+		//return categoriaEstagio;
+	//}
+	//public void setCategoriaEstagio(ArrayList<String> categoriaEstagio) {
+	//	this.categoriaEstagio = categoriaEstagio;
+	//}
 	public String getNome() {
 		return nome;
 	}
@@ -93,12 +97,12 @@ public class Candidato {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public InstituicaoEnsino getInstituicaoEnsino() {
-		return instituicaoEnsino;
-	}
-	public void setInstituicaoEnsino(InstituicaoEnsino instituicaoEnsino) {
-		this.instituicaoEnsino = instituicaoEnsino;
-	}
+	//public InstituicaoEnsino getInstituicaoEnsino() {
+		//return instituicaoEnsino;
+	//}
+	//public void setInstituicaoEnsino(InstituicaoEnsino instituicaoEnsino) {
+		//this.instituicaoEnsino = instituicaoEnsino;
+	//}
 	
 	
 	

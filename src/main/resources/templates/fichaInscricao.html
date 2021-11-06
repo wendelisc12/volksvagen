@@ -153,31 +153,23 @@
 </head>
 <body>
 <div class="container">
-	<form method="post" action="/salvar_candidato">
+	<form method="post" action="/salvarCandidato">
 	<h2>Ficha de Inscrição</h2>
 	  <fieldset>
 	   
 	   
 	   <legend>Dados pessoais</legend>
 	   
-	   <div class="categoria">
-	   <h4>Categoria</h4>
-	   <div class="form-check form-check-inline">
-	   
-	    <input type="checkbox" class="form-check-input" id="shape" name="categoriaEstagio" value="Shape Design" >
-	  	 <label for="shape" class="form-check-label">Shape Design</label>
-	  </div>
-	  <div class="form-check form-check-inline mb3">
-	    
-	    <input type="checkbox" class="form-check-input" id="color"  name="categoriaEstagio" value="Color e Trim">
-	  	<label for="color" class="form-check-label">Color & Trim</label>
-	  </div>
-	   </div>
-	   
+	   	<div class="form-group">
+		    <label for="nome">Nome</label>
+		    <input type="text" class="form-control" id="nome" name="nome" placeholder="" required>
+	  	</div>
+	  	
 	 <div class="form-group">
-	    <label for="nome">Nome</label>
-	    <input type="text" class="form-control" id="nome" name="nome" placeholder="" required>
+	    <label for="data">Data de nascimento</label>
+	    <input type="date" class="form-control" id="data" name="dataNascimento" placeholder="" required>
 	  </div>
+
 	  <div class="form-group">
 	    <label for="endereco">Endereço</label>
 	    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="" required>
@@ -198,14 +190,11 @@
 	    </div>
   	</div>
 	   
-	  
-	 
-	  
 	  <div class="row">
 	    <div class="col">
 	      <div class="form-group">
 		    <label for="fone">Telefone</label>
-		    <input type="text" class="form-control" id="fone" name="telefone" placeholder="">
+		    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="">
 		  </div>
 	    </div>
 	    <div class="col">
@@ -215,106 +204,14 @@
 		  </div>
 	    </div>
   	</div>
-	    <div class="form-group">
-	    <label for="data">Data de nascimento</label>
-	    <input type="date" class="form-control" id="data" name="dataNascimento" placeholder="" required>
-	  </div>
-	  
-	 
+
 	  <div class="form-group">
 	    <label for="email">E-mail</label>
 	    <input type="email" class="form-control" id="email" name="email" placeholder="" required>
 	  </div>
 	    
 	  </fieldset>
-	  
-	
-	  <fieldset>
-	  <legend>Dados da instituição de ensino</legend>
-	  	 <div class="form-group">
-		    <label for="nomeInstituicao">Nome</label>
-		    <input type="text" class="form-control" id="nomeInstituicao" name="nomeInstituicao" placeholder="" required>
-		  </div>
-		  <div class="form-group">
-		    <label for="curso">Curso</label>
-		    <input type="text" class="form-control" id="curso" name="curso" placeholder="">
-		  </div>
-		  
-		  
-		<div class="row">
-		    <div class="col">
-		       <div class="form-group">
-			    <label for="duracao">Duração (em semestres)</label>
-			    <input type="number" class="form-control" id="duracao" name="duracao" min="0" max="10" required>
-			   
-			  </div>
-		    </div>
-		    <div class="col">
-			   <div class="form-group">
-			    <label for="semestreAtual">Semestre Atual</label>
-			    <input type="number" class="form-control" id="semestreAtual" name="semestreAtual" min="0" max="10" required>
-			   
-			  </div>
-		    </div>
-	    
-	    </div>
-	    
-	    <div class="row">
-		    <div class="col">
-		       <div class="form-group">
-			    <label for="numeroMatricula">Número de matrícula</label>
-			    <input type="text" class="form-control" id="numeroMatricula" name="numeroMatricula" placeholder="" required>
-			   
-			  </div>
-		    </div>
-		    
-		    <div class="col">
-			   <div class="form-group">
-			    <label for="cepInstituicao">CEP</label>
-			    <input type="text" class="form-control" id="cepInstituicao" name="cepInstituicao" placeholder="" required>
-			   
-			  </div>
-		    </div>
-		</div>
-			<div class="form-group">
-			    <label for="enderecoInstituicao">Endereço</label>
-			    <input type="text" class="form-control" id="enderecoInstituicao" name="enderecoInstituicao" placeholder="" required>
-			   
-			 </div>
-			 
-			 <div class="form-group">
-			    <label for="ufInstituicao">Cidade/UF</label>
-			    <input type="text" class="form-control" id="ufInstituicao" name="ufInstituicao" placeholder="" required>
-			   
-			 </div>
-			 
-	<div class="row">
-	    <div class="col">
-	      <div class="form-group">
-		    <label for="telefoneInstituicao">Telefone</label>
-		    <input type="text" class="form-control" id="telefoneInstituicao" name="telefoneInstituicao" placeholder="" required>
-		  </div>
-	    </div>
-	    <div class="col">
-		   <div class="form-group">
-		    <label for="telefone2">Telefone 2</label>
-		    <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="">
-		  </div>
-	    </div>
-  	</div>
-  			<div class="form-group">
-			    <label for="coordenador">Coordenador</label>
-			    <input type="text" class="form-control" id="coordenador" name="coordenador" placeholder="" required>
-			   
-			 </div>
-			 <div class="form-group">
-			    <label for="emailInstituicao">E-mail</label>
-			    <input type="email" class="form-control" id="emailInstituicao" name="emailInstituicao" placeholder="" required>
-			   
-			 </div>
-  	
-		 
-	  </fieldset>
+	 
 	  <button type="submit" class="btn btn-primary btn-salvar">Cadastrar</button>
 	</form>
 	
